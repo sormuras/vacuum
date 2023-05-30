@@ -1,0 +1,35 @@
+#
+# Java Launcher Argument File running module "run.bach"
+#
+
+#
+# Common debug-related arguments
+#
+# --show-version
+# --show-module-resolution
+
+#
+# Logging Properties
+#
+-Djava.util.logging.config.file=.bach/logging.properties
+
+#
+# Java Flight Recorder arguments
+#
+-Xlog:jfr+startup=error
+-XX:StartFlightRecording:name=Bach,filename=.bach/var/log/recording.jfr,dumponexit=true
+
+#
+# Path to all application modules
+#
+--module-path .bach/var/cache/bootstrap
+
+#
+# Set of additional root modules
+#
+--add-modules ALL-DEFAULT,ALL-MODULE-PATH
+
+#
+# Module to launch
+#
+--module run.bach/run.bach.Main
