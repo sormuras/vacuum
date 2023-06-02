@@ -10,6 +10,7 @@ import run.bach.Configuration.Toolbox.Tool;
             withLoadingToolProviderServices = true,
             tools = {"java", "jfr"},
             tasks = {
+              @Task(name = "build", calls = @Call(tool = "project/build")),
               @Task(
                   name = "versions",
                   // parallel = true,
@@ -30,6 +31,9 @@ import run.bach.Configuration.Toolbox.Tool;
             }))
 module project {
   requires run.bach;
+  requires jdk.compiler; // provides "javac"
+  requires jdk.jartool; // provides "jar"
+  requires jdk.jlink; // provides "jlink" and "jmod"
 
   provides java.util.spi.ToolProvider with
       project.Build, // provides "build"
