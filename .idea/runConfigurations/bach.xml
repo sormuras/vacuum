@@ -1,0 +1,11 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="bach" type="Application" factoryName="Application" editBeforeRun="true">
+    <option name="MAIN_CLASS_NAME" value="run.bach.Main" />
+    <module name="project" />
+    <option name="PROGRAM_PARAMETERS" value="format" />
+    <option name="VM_PARAMETERS" value="-Djava.util.logging.config.file=.bach/logging.properties" />
+    <method v="2">
+      <option name="Make" enabled="true" />
+    </method>
+  </configuration>
+</component>
