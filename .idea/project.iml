@@ -6,7 +6,6 @@
       <sourceFolder url="file://$MODULE_DIR$/.bach/src/project" isTestSource="true" />
     </content>
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="module" module-name="run.bach.tools" scope="TEST" />
     <orderEntry type="module" module-name="run.bach" scope="TEST" />
     <orderEntry type="inheritedJdk" />
   </component>
