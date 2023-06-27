@@ -27,7 +27,7 @@ import run.bach.Configuration.Toolbox.Tool;
               @Tool(name = "echo", version = "99"),
               @Tool(name = "google-java-format", version = "1.17.0"),
               @Tool(name = "jreleaser", version = "1.6.0"),
-              @Tool(name = "maven", version = "3.9.2")
+              @Tool(name = "maven", version = "3.9.3")
             }))
 module project {
   requires run.bach;
